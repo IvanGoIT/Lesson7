@@ -1,6 +1,8 @@
 package animals;
 
-public class Animal {
+import animals.interf.IDrink;
+
+public abstract class Animal implements IDrink {
     public String name = "default";
     private int age = 5;
     protected int weight = 10;
@@ -24,7 +26,10 @@ public class Animal {
         showWeight("");
     }
 
+    // перегрузка метода showWeight()
     public void showWeight(String message) {
         System.out.println(message + weight);
     }
+
+    public abstract void run();
 }

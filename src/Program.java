@@ -22,5 +22,9 @@ public class Program {
 
         cat1.showWeight();
         dog1.showWeight();
+
+        cat1.run();
+
+        // Animal animal = new Animal("SomeAnimal", 10, 10);
     }
 }
